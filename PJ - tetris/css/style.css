@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{  
+    overflow: hidden;
+    background-image: url(/imagens/fundo-2.jpg);
+    background-size: cover;
+    color: #fff;  
+    font-family: sans-serif;  
+    font-size: 2em;  
+    text-align: center;  
+}  
+.buttons{
+    background: #161616;
+    width: 14vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.buttons .title{
+    position: absolute;
+    top: 0;
+    margin-top: 7vh;
+    font-family: "Creepster", cursive;
+    font-size: .9em;
+    letter-spacing: 0.2ch;
+}
+#red{color: red;} 
+#orange{color: orangered;} 
+#yellow{color: yellow;}
+#green{color: green;} 
+#blue{ color: blue;} 
+#magenta{ color: darkmagenta;}
+.buttons h4{
+    position: absolute;
+    top: 0;
+    margin-top: 20vh;
+    padding: .2em 1em;
+    font-size: 0.63em;
+    background: transparent;
+    border: 1px solid #cdc;
+    border-radius: 8px;
+}
+.buttons a{
+    font-size: 16px;
+    width: 80%;
+    margin: .4em 0;
+    padding: 6px 12px;
+    background: transparent;
+    border: .06em solid #cdc;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+}
+.buttons a:hover{
+    box-shadow: 0 0 5px #cdc, 0 0 10px #cdc;
+}
+.buttons a button{
+    font-size: 16px;
+    color: white;
+    background: transparent;
+    border: none;
+}
+#btn-resetar{
+    position: absolute;
+    bottom: 0;
+    font-size: 14px;
+    margin-bottom: 5vh;
+    padding: 6px 12px;
+    background: transparent;
+    border: none;
+    color: white;
+    text-decoration: none;
+}
+#btn-resetar:hover{
+    box-shadow: 0 0 5px #cdc, 0 0 10px #cdc;
+    border: .06em solid #cdc;
+    border-radius: 8px;
+}
+canvas{  
+    border:solid 0.2em #00024772; 
+    margin-top: 5vh;
+    height:90vh;  
+}
+ 
+ 

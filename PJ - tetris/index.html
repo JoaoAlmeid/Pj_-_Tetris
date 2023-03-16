@@ -1,0 +1,49 @@
+<!DOCTYPE html>  
+<html lang="pt-br"> 
+<head>  
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>TETRIS</title>  
+    <link rel="shortcut icon" href="/imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">    
+</head>  
+<body>  
+    <noscript>Esse jogo precisa de JavaScript para funcionar!</noscript>
+    <div class="menu">
+        <div class="buttons">
+            <h2 class="title">
+                <b id="red">T</b>
+                <b id="orange">E</b>
+                <b id="yellow">T</b>
+                <b id="green">R</b>
+                <b id="blue">I</b>
+                <b id="magenta">S</b>
+            </h2>
+            <h4 id="score"></h4>
+            <a><button type="button" onclick="recarregarAPagina()">Novo Jogo</button></a>
+            <a href="#">Pontuação</a>
+            <a href="javascript:popupinfo()">Info</a>
+            
+        </div> 
+    </div>
+    <canvas id="tetris" width="240" height="400" /> 
+    <script src="/js/game.js"></script>
+    <script type="text/javascript">
+        function recarregarAPagina(){
+            window.location.reload();
+        }
+        function popupinfo(){
+            varWindow = window.open('popup.html', 'popup', "width=400, height=500, top=100, left=110, scrollbars=no ");
+        }
+        function fecharpopup(){
+            fecharWindow = abrirWindow.close()
+        }
+    </script>  
+ </body>  
+
+ </html>
+
